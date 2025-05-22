@@ -1,0 +1,157 @@
+/*로그인버튼 #e4e4e4; 호버효과 상단: rgb(175, 213, 254);*/
+/*다이어리버튼 #c4c4c4;*/
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #ffffff;
+}
+/*상단바============================*/
+.top_nav {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
+}
+/*상단바 왼쪽 텍스트or 아이콘*/
+.left_top_icon {
+  margin-left: 3%;
+  margin-right: auto; /* 왼쪽 고정 + 나머지 오른쪽 밀림*/
+}
+.login button {
+  background-color: #e4e4e4;
+  padding: 12px 30px;
+  margin: 5px;
+  border-style: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-right: 30px;
+}
+
+.login button:hover {
+  background-color: rgb(175, 213, 254);
+}
+/*상단 메뉴 리스트*/
+.top_menu {
+  margin-right: 30px;
+}
+
+.top_menu ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.top_menu a {
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.2vw;
+}
+
+.top_menu a:hover {
+  color: rgb(175, 213, 254);
+}
+/*--------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------*/
+/*메인틀 (동일)=========================*/
+.main_box {
+  display: flex;
+  padding: 30px;
+  gap: 50px;
+}
+
+/*왼쪽 사이드바 */
+.left_sidebar {
+  top: 20px;
+  position: sticky;
+  align-self: flex-start; /* flex 아이템이 위로 붙도록 */
+  height: fit-content;
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/*왼쪽 사이드바====================== */
+.left_sidebar {
+  top: 20px; /*위에서 20px 떨어진 위치에 도달하면 고정*/
+  position: sticky; /*스크롤 특정 위치에 고정*/
+  align-self: flex-start; /* flex 아이템이 위로 붙도록 */
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 메뉴 박스 */
+.left_menu {
+  background-color: #ffffff;
+  border: 1px solid #aaa;
+  border-radius: 10px;
+  padding: 2vw;
+  box-shadow: 1px 1px 1px 1px rgb(194, 194, 194);
+  height: 300px;
+}
+
+.left_menu h3 {
+  border-bottom: 1px solid #aaa;
+  padding-bottom: 10px;
+}
+
+.left_menu ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.left_menu li {
+  padding: 10px 0;
+  font-weight: bold;
+  font-size: 1vw;
+}
+
+/*오른쪽 컨텐츠 박스==========================*/
+.content_wrapper {
+  width: 70%;
+  background-color: white;
+  padding: 2vw 5vw;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+/*내부 내용물: 사진or영상or텍스트 등*/
+.main_section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main_section h2 {
+  margin-bottom: 30px;
+}
+.contents_img {
+  background-color: gray;
+  width: 70%;
+  height: 500px;
+  overflow: hidden; /* 부모 영역을 벗어나는 자식 요소(이미지)를 숨김 */
+}
+.contents_img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover; /* 공간에 채우고 넘치는 부분 자르기 */
+  object-position: bottom; /* 이미지를 아래쪽에 맞춰서 위에가 잘림 */
+}
+.contents_text {
+  width: 70%;
+}
+.contents_text p {
+  line-height: 2;
+}
+.contents_text img {
+  max-width: 500px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover; /* 공간에 채우고 넘치는 부분 자르기 */
+  object-position: bottom; /* 이미지를 아래쪽에 맞춰서 위에가 잘림 */
+}

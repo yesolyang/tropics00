@@ -1,0 +1,192 @@
+/*로그인버튼 #e4e4e4; 호버효과 통일색: rgb(175, 213, 254);*/
+/*다이어리버튼 #c4c4c4;*/
+/*하단 띠*/
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #ffffff;
+}
+/*상단바============================*/
+.top_nav {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
+}
+/*상단바 왼쪽 텍스트or 아이콘*/
+.left_top_icon {
+  margin-left: 3%;
+  margin-right: auto; /* 왼쪽 고정 + 나머지 오른쪽 밀림*/
+}
+.login button {
+  background-color: #e4e4e4;
+  padding: 12px 30px;
+  margin: 5px;
+  border-style: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-right: 30px;
+}
+
+.login button:hover {
+  background-color: rgb(175, 213, 254);
+}
+/*상단 메뉴 리스트*/
+.top_menu {
+  margin-right: 30px;
+}
+
+.top_menu ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.top_menu a {
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.2vw;
+}
+
+.top_menu a:hover {
+  color: rgb(175, 213, 254);
+}
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*타이틀==========================*/
+.title {
+  background-image: url("../image/main_img.png");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: white;
+  width: 100%;
+  padding: 10vw 0;
+}
+
+.title h1 {
+  font-size: 3.5vw;
+  font-weight: bold;
+  margin: 10px 0px;
+  text-shadow: 2px 2px 2px black;
+}
+
+.title p {
+  font-size: 1.5vw;
+  font-weight: bold;
+  margin: 10px 0px;
+}
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*컨텐츠 박스===================================*/
+
+/*떠나고 싶은 국가 선택*/
+.choice_text {
+  text-align: center;
+  padding-top: 10px;
+}
+.choice_text h3 {
+  font-size: 1.7vw;
+  font-weight: bold;
+}
+.content_wrapper {
+  background-color: white;
+  width: 80%;
+  margin: 50px auto;
+  border-radius: 30px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+/*국가 카드 박스*/
+.going_contry {
+  display: grid;
+  /*같은규칙 반복, 공간에 따라 가능한 열,  1fr (= 가용 공간 나눔)*/
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 50px;
+  padding: 5vw;
+}
+
+/*국가별 카드*/
+.going_contry > div {
+  display: flex;
+  justify-content: center;
+}
+/*국가별 카드 공통*/
+.country_card {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  align-items: center;
+  padding-bottom: 20px;
+}
+/*국가이름 박스*/
+.card_text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin-top: 15px;
+}
+.card_text p {
+  font-weight: bold;
+  font-size: 1.5vw;
+}
+.card_text button {
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 4vw;
+  height: 4vw;
+  font-size: 1.5vw;
+  cursor: pointer;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  cursor: pointer;
+}
+.country_card:hover {
+  transform: translateY(-5px);
+}
+.card_text button:hover {
+  background-color: rgb(141, 194, 255);
+}
+.country_card img {
+  margin-top: 5%;
+  width: 90%;
+  height: auto;
+  aspect-ratio: 4 / 3; /* 비율유지 가로 / 세로 */
+  object-fit: cover; /* 이미지가 넘치지 않게 자르고 꽉 채움 */
+  border-radius: 20px;
+}
+
+.temp {
+  font-size: 3vw;
+  text-align: center;
+  height: 400px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.temp p {
+  margin-top: 150px;
+}
+
+.foot {
+  background-color: #ffffff;
+  color: #333;
+  height: 200px;
+}
+
+.foot_top {
+  margin-top: 50px;
+  padding: 15px;
+  background-color: #6979b9;
+  color: white;
+}

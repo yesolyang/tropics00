@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>로그인</title>
+    <link rel="stylesheet" href="css/Login_Signup_with.css" />
+  </head>
+  <body>
+    <header class="top_nav">
+      <div class="left_top_icon"><h3>열대낙원(아이템미정)</h3></div>
+      <nav class="top_menu">
+        <ul>
+          <li><a href="#">미정 메뉴</a></li>
+          <li><a href="#">동영상 랜선여행</a></li>
+          <li><a href="#">여행 플래너</a></li>
+          <li><a href="#">나의 여행</a></li>
+        </ul>
+      </nav>
+      <div class="login">
+        <button>Login</button>
+      </div>
+    </header>
+
+    <main class="login_body">
+      <div class="form_wrapper">
+        <h2>Login</h2>
+        <form>
+          <input type="text" placeholder="아이디를 입력하세요." required />
+          <input
+            type="password"
+            placeholder="비밀번호를 입력하세요."
+            required
+          />
+          <div class="button">
+            <button type="submit">로그인</button>
+            <button type="submit" onclick="location.href='Signup.html'">
+              회원가입
+            </button>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
